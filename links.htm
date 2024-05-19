@@ -1,0 +1,1074 @@
+<html>
+<head>
+<title>HTML a rev Attribute</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="Keywords" content="html,css,tutorial,html5,dhtml,css3,xsl,xslt,xhtml,javascript,jquery,asp,ado,net,vbscript,dom,sql,colors,soap,php,rss,authoring,programming,training,learning,quiz,beginner's guide,primer,lessons,school,howto,reference,examples,samples,source code,tags,demos,tips,links,FAQ,tag list,forms,frames,color table,w3c,cascading style sheets,active server pages,dynamic html,internet,database,development,Web building,Webmaster,html guide" />
+<meta name="Description" content="Free HTML XHTML CSS JavaScript jQuery XML DOM XSL XSLT RSS AJAX ASP .NET PHP SQL tutorials, references, examples for web building." />
+<script type="text/javascript">
+
+<!--
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+//-->
+
+</script>
+<script type="text/javascript">
+
+<!--
+
+function searchfield_focus(obj)
+
+{
+
+obj.style.color=""
+
+obj.style.fontStyle=""
+
+if (obj.value=="Search w3schools.com")
+
+	{obj.value=""}
+
+}
+
+var pageTracker = _gat._getTracker("UA-3855518-1");
+
+pageTracker._initData();
+
+pageTracker._trackPageview();
+
+var addr=document.location.href;
+
+function displayError()
+
+{
+
+document.getElementById("err_url").value=addr;
+
+document.getElementById("err_form").style.display="block";
+
+document.getElementById("err_desc").focus();
+
+hideSent();
+
+}
+
+function hideError()
+
+{
+
+document.getElementById("err_form").style.display="none";
+
+}
+
+function hideSent()
+
+{
+
+document.getElementById("err_sent").style.display="none";
+
+}
+
+function sendErr()
+
+{
+
+var xmlhttp;
+
+var err_url=document.getElementById("err_url").value;
+
+var err_email=document.getElementById("err_email").value;
+
+var err_desc=document.getElementById("err_desc").value;
+
+if (window.XMLHttpRequest)
+
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+
+  xmlhttp=new XMLHttpRequest();
+
+  }
+
+else
+
+  {// code for IE6, IE5
+
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+  }
+
+xmlhttp.open("POST","/err_sup.asp",true);
+
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+
+hideError();
+
+document.getElementById("err_sent").style.display="block";
+
+}
+
+function click_expandingMenuHeader(obj,sectionName)
+
+{
+
+var x=document.getElementById("cssprop_" + sectionName).parentNode.className;
+
+if (x.indexOf("expandingMenuNotSelected")>-1)
+
+	{
+
+	x=x.replace("expandingMenuNotSelected","expandingMenuSelected");
+
+	document.getElementById("cssprop_" + sectionName).parentNode.className=x;
+
+	document.getElementById("cssprop_" + sectionName).style.display="block";
+
+	}
+
+else
+
+	{
+
+	x=x.replace("expandingMenuSelected","expandingMenuNotSelected");
+
+	document.getElementById("cssprop_" + sectionName).parentNode.className=x;
+
+	document.getElementById("cssprop_" + sectionName).style.display="none";
+
+	}
+
+}
+
+//-->
+
+</script>
+<!--[if lt IE 7]>
+
+<style>
+
+#leftcolumn{margin-left:0}
+
+</style>
+
+<![endif]--> 
+<link rel="stylesheet" type="text/css" href="/stdtheme.css" />
+</head>
+
+<body bgcolor="#FFFFFF">
+<div style="position:relative;width:100%;margin-top:0px;margin-bottom:0px;"> 
+  <div style="width:960px;margin-top:5px;margin-left:auto;margin-right:auto"> 
+    <div style="width:960px;padding:0px;margin:0px;"> 
+      <div style="width:634px;margin:0px;padding:0px;background-color:#ffffff;color:#000000;padding-bottom:8px;padding-right:5px;padding-top:4px;float:left;"> 
+        <p>&lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &lt;title&gt; &lt;Educator.com - #1 - Phrase Tags - HTML 5.0&gt;<br>
+          &lt;/head&gt;</p>
+        <p> <font color="#000000">&lt;body&gt;</font><br>
+          &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; <br>
+        </p>
+        <p>&lt;OL&gt;<br>
+          &lt;LI&gt;&lt;U&gt;A Href:&lt;/U&gt; &lt;BR&gt;Refers to a link outside 
+          of the current doument - &lt;A HREF=“http://www.google.com&quot;&gt;Google.com 
+          - Link to another website.&lt;/A&gt;&lt;/LI&gt;<br>
+          <br>
+          &lt;LI&gt;&lt;U&gt;A Href target=&quot;_blank&quot;&lt;/U&gt; &lt;BR&gt;Refers 
+          to a link outside of the current doument and opens in a different browser- 
+          &lt;A HREF=“http://www.google.com&quot; Target=&quot;_blank&quot;&gt;Google.com 
+          - Link to another website.&lt;/A&gt;&lt;/LI&gt;<br>
+          <br>
+          &lt;LI&gt;&lt;U&gt;A Href rel="help&quot;&lt;/U&gt; &lt;BR&gt;Specifies 
+          the relationship between current document and linked document. - <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;A HREF=“http://www.google.com
+          Target=“_blank”Hreflang=“en”Rel=“help” &gt; Google.com with the &quot;REL&quot; 
+          Code.&lt;/A&gt;&lt;/LI&gt; </p>
+        <p>&lt;LI&gt;&lt;U&gt;A Href rel="help&quot;&lt;/U&gt; &lt;BR&gt;Specifies 
+          the relationship between current document and linked document. - <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;A HREF=“http://www.google.com
+          Target=“_blank”Hreflang=“en”Rel=“help” &gt; Google.com with the &quot;REL&quot; 
+          Code.&lt;/A&gt;&lt;/LI&gt; <br>
+          <br>
+          &lt;LI&gt;&lt;U&gt;<u>A Name=&quot;top&quot;</u>&lt;/U&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;BR&gt;This is an anchor 
+          link to - &lt;A HREF=“#language&quot; &gt; Language Reference &lt;/A&gt;&lt;/LI&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;BR&gt;This is an anchor 
+          link to - &lt;A HREF=“##revrel&quot; &gt; Rel/Ref &lt;/A&gt;&lt;/LI&gt;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;A name="language"&gt;&lt;/A&gt;&lt;/LI&gt; 
+          &lt;BR&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;A name="revrel"&gt;&lt;/A&gt;&lt;/LI&gt; 
+          &lt;BR&gt;<br>
+          <br>
+          &lt;LI&gt;&lt;A Href=http://www.facebook.comTarget=“_blank”ALT=“alternate 
+          text&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;IMG SRC=“images/black_red.jpg”&gt;</p>
+        <p>&lt;/LI&gt;&lt;img src=images/black_red.jpg width="367" height="449" 
+          border="0" alt="red black block" usemap="#Map"&gt;<br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;map name="Map"&gt;<br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="rect" 
+          coords="44,22,297,148" href="http://www.facebook.com" target="_blank"&gt;<br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="circle" 
+          coords="178,252,84" href="http://www.educator.com" target="_blank"&gt;<br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="poly" 
+          coords="306,426,266,316,75,432,305,426" href="http://www.yahoo.com" 
+          target="_blank"&gt; <br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/map&gt;<br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/BR&gt; <br>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;A Href=&quot;http://www.image-maps.com/&quot;&gt; 
+          Online Image Map Tool &lt;/A&gt;<br>
+        
+        <p> <br>
+          <br>
+          <br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt; </p>
+        <hr>
+        <ol>
+          <li><u>A Href</u><br>
+            Refers to a link outside of the current doument - <a href=http://www.google.com>Google.com 
+            - Link to another website.</a><br>
+            <br>
+          </li>
+          <li><u>A Href target="_blank"</u> <br>
+            Refers to a link outside of the current doument and opens in a different 
+            browser- <a href=http://www.google.com target="_blank">Google.com 
+            - Link to another website.</a><br>
+            <br>
+          </li>
+          <li><u>A Href hreflang="language_code"</u> <br>
+            A two-letter language code specifies the language of the linked document. 
+            - <a href=http://www.google.com target="_blank"   hreflang="language_code" >Google.com 
+            - Language Code is En for English.</a><br>
+            <br>
+          </li>
+          <li><u>A Href rel="help&quot;</u> <br>
+            Specifies the relationship between current document and linked document. 
+            - <a href=http://www.google.comtarget=_blankhreflang=“en”rel=“help” > 
+            Google.com with the &quot;REL&quot; Code</a><br>
+            <br>
+          </li>
+          <li><u>A Name=&quot;top&quot;</u><br>
+            This is an anchor link to -<a href="#language"> Language Reference</a><br>
+            This is an anchor link to - <a href="#revrel">Rev / Rel </a><br>
+            <br>
+          </li>
+          <li><a href=http://www.facebook.com><img src=images/black_red.jpg width="367" height="449" border="0" alt="red black block"> 
+            </a> </li>
+          <li><img src=images/black_red2.jpg width="367" height="449" border="0" alt="red black block" usemap="#Map"> 
+            <map name="Map"> <area shape="rect" coords="43,23,296,149" href="http://www.facebook.com" target="_blank"> 
+              <area shape="circle" coords="178,252,84" href="http://www.educator.com" target="_blank"> 
+              <area shape="poly" coords="306,426,266,316,75,432,305,426" href="http://www.yahoo.com" target="_blank"> 
+            </map> <br>
+            <br>
+            <a href="http://www.image-maps.com/" target="_blank">http://www.image-maps.com/</a> 
+            <br>
+            <br>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="position:relative;width:100%;margin-top:0px;margin-bottom:0px;">
+  <div style="width:960px;margin-top:5px;margin-left:auto;margin-right:auto">
+    <div style="width:960px;padding:0px;margin:0px;">
+      <div style="width:634px;margin:0px;padding:0px;background-color:#ffffff;color:#000000;padding-bottom:8px;padding-right:5px;padding-top:4px;float:left;">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="position:relative;width:100%;margin-top:0px;margin-bottom:0px;">
+  <div style="width:960px;margin-top:5px;margin-left:auto;margin-right:auto">
+    <div style="width:960px;padding:0px;margin:0px;">
+      <div style="width:634px;margin:0px;padding:0px;background-color:#ffffff;color:#000000;padding-bottom:8px;padding-right:5px;padding-top:4px;float:left;">
+<h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2><font face="Trebuchet MS" size="3"><a name="revrel"></a>Rev / Rel<br>
+          </font><font face="Trebuchet MS" size="3">&lt;a rev=&quot;<i>value</i>&quot;&gt; 
+          or &lt;a rel=&quot;value&quot;&gt;</font></h2>
+        <div class="code notranslate"></div>
+        <h2><font face="Trebuchet MS" size="3">Attribute Values</font></h2>
+        <table class="reference">
+          <tr> 
+            <th align="left" width="20%"><font face="Trebuchet MS" size="2">Value</font></th>
+            <th align="left" width="80%"><font face="Trebuchet MS" size="2">Description</font></th>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">alternate</font></td>
+            <td><font face="Trebuchet MS" size="2">An alternate version of the 
+              document (i.e. print page, translated or mirror)</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">stylesheet</font></td>
+            <td><font face="Trebuchet MS" size="2">An external style sheet for 
+              the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">start</font></td>
+            <td><font face="Trebuchet MS" size="2">The first document in a selection</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">next</font></td>
+            <td><font face="Trebuchet MS" size="2">The next document in a selection</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">prev</font></td>
+            <td><font face="Trebuchet MS" size="2">The previous document in a 
+              selection</font></td>
+          </tr>
+          <tr> 
+            <td height="22"><font face="Trebuchet MS" size="2">contents</font></td>
+            <td height="22"><font face="Trebuchet MS" size="2">A table of contents 
+              for the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">index</font></td>
+            <td><font face="Trebuchet MS" size="2">An index for the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">glossary</font></td>
+            <td><font face="Trebuchet MS" size="2">A glossary (explanation) of 
+              words used in the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">copyright</font></td>
+            <td><font face="Trebuchet MS" size="2">A document containing copyright 
+              information</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">chapter</font></td>
+            <td><font face="Trebuchet MS" size="2">A chapter of the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">section</font></td>
+            <td><font face="Trebuchet MS" size="2">A section of the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">subsection</font></td>
+            <td><font face="Trebuchet MS" size="2">A subsection of the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">appendix</font></td>
+            <td><font face="Trebuchet MS" size="2">An appendix for the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">help</font></td>
+            <td><font face="Trebuchet MS" size="2">A help document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">bookmark</font></td>
+            <td><font face="Trebuchet MS" size="2">A related document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2"></font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">nofollow</font></td>
+            <td><font face="Trebuchet MS" size="2">&quot;nofollow&quot; is used 
+              by Google, to specify that the Google search spider should not follow 
+              that link (mostly used for paid links)</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">licence</font></td>
+            <td><font face="Trebuchet MS" size="2">Link to copyright information 
+              for the document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">tag</font></td>
+            <td><font face="Trebuchet MS" size="2">A tag (keyword) for the current 
+              document</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">friend</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <h2><font face="Trebuchet MS" size="3"><a name="language"></a>HREFLang 
+          Reference </font></h2>
+        <table class="reference" width="401">
+          <tr> 
+            <th align="left"><font face="Trebuchet MS" size="2">Language</font></th>
+            <th align="left"><font face="Trebuchet MS" size="2">ISO Code</font></th>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Abkhazian</font></td>
+            <td><font face="Trebuchet MS" size="2">ab</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Afar</font></td>
+            <td><font face="Trebuchet MS" size="2">aa</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Afrikaans</font></td>
+            <td><font face="Trebuchet MS" size="2">af</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Albanian</font></td>
+            <td><font face="Trebuchet MS" size="2">sq</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Amharic</font></td>
+            <td><font face="Trebuchet MS" size="2">am</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Arabic</font></td>
+            <td><font face="Trebuchet MS" size="2">ar</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Aragonese</font></td>
+            <td><font face="Trebuchet MS" size="2">an</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Armenian</font></td>
+            <td><font face="Trebuchet MS" size="2">hy</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Assamese</font></td>
+            <td><font face="Trebuchet MS" size="2">as</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Aymara</font></td>
+            <td><font face="Trebuchet MS" size="2">ay</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Azerbaijani</font></td>
+            <td><font face="Trebuchet MS" size="2">az</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bashkir</font></td>
+            <td><font face="Trebuchet MS" size="2">ba</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Basque</font></td>
+            <td><font face="Trebuchet MS" size="2">eu</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bengali (Bangla)</font></td>
+            <td><font face="Trebuchet MS" size="2">bn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bhutani</font></td>
+            <td><font face="Trebuchet MS" size="2">dz</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bihari</font></td>
+            <td><font face="Trebuchet MS" size="2">bh</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bislama</font></td>
+            <td><font face="Trebuchet MS" size="2">bi</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Breton</font></td>
+            <td><font face="Trebuchet MS" size="2">br</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Bulgarian</font></td>
+            <td><font face="Trebuchet MS" size="2">bg</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Burmese</font></td>
+            <td><font face="Trebuchet MS" size="2">my</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Byelorussian (Belarusian)</font></td>
+            <td><font face="Trebuchet MS" size="2">be</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Cambodian</font></td>
+            <td><font face="Trebuchet MS" size="2">km</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Catalan</font></td>
+            <td><font face="Trebuchet MS" size="2">ca</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Cherokee</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Chewa</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Chinese (Simplified)</font></td>
+            <td><font face="Trebuchet MS" size="2">zh</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Chinese (Traditional)</font></td>
+            <td><font face="Trebuchet MS" size="2">zh</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Corsican</font></td>
+            <td><font face="Trebuchet MS" size="2">co</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Croatian</font></td>
+            <td><font face="Trebuchet MS" size="2">hr</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Czech</font></td>
+            <td><font face="Trebuchet MS" size="2">cs</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Danish</font></td>
+            <td><font face="Trebuchet MS" size="2">da</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Divehi</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Dutch</font></td>
+            <td><font face="Trebuchet MS" size="2">nl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Edo</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">English</font></td>
+            <td><font face="Trebuchet MS" size="2">en</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Esperanto</font></td>
+            <td><font face="Trebuchet MS" size="2">eo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Estonian</font></td>
+            <td><font face="Trebuchet MS" size="2">et</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Faeroese</font></td>
+            <td><font face="Trebuchet MS" size="2">fo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Farsi</font></td>
+            <td><font face="Trebuchet MS" size="2">fa</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Fiji</font></td>
+            <td><font face="Trebuchet MS" size="2">fj</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Finnish</font></td>
+            <td><font face="Trebuchet MS" size="2">fi</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Flemish</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">French</font></td>
+            <td><font face="Trebuchet MS" size="2">fr</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Frisian</font></td>
+            <td><font face="Trebuchet MS" size="2">fy</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Fulfulde</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Galician</font></td>
+            <td><font face="Trebuchet MS" size="2">gl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Gaelic (Scottish)</font></td>
+            <td><font face="Trebuchet MS" size="2">gd</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Gaelic (Manx)</font></td>
+            <td><font face="Trebuchet MS" size="2">gv</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Georgian</font></td>
+            <td><font face="Trebuchet MS" size="2">ka</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">German</font></td>
+            <td><font face="Trebuchet MS" size="2">de</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Greek</font></td>
+            <td><font face="Trebuchet MS" size="2">el</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Greenlandic</font></td>
+            <td><font face="Trebuchet MS" size="2">kl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Guarani</font></td>
+            <td><font face="Trebuchet MS" size="2">gn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Gujarati</font></td>
+            <td><font face="Trebuchet MS" size="2">gu</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Haitian Creole</font></td>
+            <td><font face="Trebuchet MS" size="2">ht</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Hausa</font></td>
+            <td><font face="Trebuchet MS" size="2">ha</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Hawaiian</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Hebrew</font></td>
+            <td><font face="Trebuchet MS" size="2">he, iw</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Hindi</font></td>
+            <td><font face="Trebuchet MS" size="2">hi</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Hungarian</font></td>
+            <td><font face="Trebuchet MS" size="2">hu</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Ibibio</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Icelandic</font></td>
+            <td><font face="Trebuchet MS" size="2">is</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Ido</font></td>
+            <td><font face="Trebuchet MS" size="2">io</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Igbo</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Indonesian</font></td>
+            <td><font face="Trebuchet MS" size="2">id, in</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Interlingua</font></td>
+            <td><font face="Trebuchet MS" size="2">ia</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Interlingue</font></td>
+            <td><font face="Trebuchet MS" size="2">ie</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Inuktitut</font></td>
+            <td><font face="Trebuchet MS" size="2">iu</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Inupiak</font></td>
+            <td><font face="Trebuchet MS" size="2">ik</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Irish</font></td>
+            <td><font face="Trebuchet MS" size="2">ga</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Italian</font></td>
+            <td><font face="Trebuchet MS" size="2">it</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Japanese</font></td>
+            <td><font face="Trebuchet MS" size="2">ja</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Javanese</font></td>
+            <td><font face="Trebuchet MS" size="2">jv</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kannada</font></td>
+            <td><font face="Trebuchet MS" size="2">kn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kanuri</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kashmiri</font></td>
+            <td><font face="Trebuchet MS" size="2">ks</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kazakh</font></td>
+            <td><font face="Trebuchet MS" size="2">kk</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kinyarwanda (Ruanda)</font></td>
+            <td><font face="Trebuchet MS" size="2">rw</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kirghiz</font></td>
+            <td><font face="Trebuchet MS" size="2">ky</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kirundi (Rundi)</font></td>
+            <td><font face="Trebuchet MS" size="2">rn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Konkani</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Korean</font></td>
+            <td><font face="Trebuchet MS" size="2">ko</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Kurdish</font></td>
+            <td><font face="Trebuchet MS" size="2">ku</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Laothian</font></td>
+            <td><font face="Trebuchet MS" size="2">lo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Latin</font></td>
+            <td><font face="Trebuchet MS" size="2">la</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Latvian (Lettish)</font></td>
+            <td><font face="Trebuchet MS" size="2">lv</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Limburgish ( Limburger)</font></td>
+            <td><font face="Trebuchet MS" size="2">li</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Lingala</font></td>
+            <td><font face="Trebuchet MS" size="2">ln</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Lithuanian</font></td>
+            <td><font face="Trebuchet MS" size="2">lt</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Macedonian</font></td>
+            <td><font face="Trebuchet MS" size="2">mk</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Malagasy</font></td>
+            <td><font face="Trebuchet MS" size="2">mg</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Malay</font></td>
+            <td><font face="Trebuchet MS" size="2">ms</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Malayalam</font></td>
+            <td><font face="Trebuchet MS" size="2">ml</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2"></font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Maltese</font></td>
+            <td><font face="Trebuchet MS" size="2">mt</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Maori</font></td>
+            <td><font face="Trebuchet MS" size="2">mi</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Marathi</font></td>
+            <td><font face="Trebuchet MS" size="2">mr</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Moldavian</font></td>
+            <td><font face="Trebuchet MS" size="2">mo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Mongolian</font></td>
+            <td><font face="Trebuchet MS" size="2">mn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Nauru</font></td>
+            <td><font face="Trebuchet MS" size="2">na</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Nepali</font></td>
+            <td><font face="Trebuchet MS" size="2">ne</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Norwegian</font></td>
+            <td><font face="Trebuchet MS" size="2">no</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Occitan</font></td>
+            <td><font face="Trebuchet MS" size="2">oc</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Oriya</font></td>
+            <td><font face="Trebuchet MS" size="2">or</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Oromo (Afan, Galla)</font></td>
+            <td><font face="Trebuchet MS" size="2">om</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Papiamentu</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Pashto (Pushto)</font></td>
+            <td><font face="Trebuchet MS" size="2">ps</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Polish</font></td>
+            <td><font face="Trebuchet MS" size="2">pl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Portuguese</font></td>
+            <td><font face="Trebuchet MS" size="2">pt</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Punjabi</font></td>
+            <td><font face="Trebuchet MS" size="2">pa</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Quechua</font></td>
+            <td><font face="Trebuchet MS" size="2">qu</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Rhaeto-Romance</font></td>
+            <td><font face="Trebuchet MS" size="2">rm</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Romanian</font></td>
+            <td><font face="Trebuchet MS" size="2">ro</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Russian</font></td>
+            <td><font face="Trebuchet MS" size="2">ru</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sami (Lappish)</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Samoan</font></td>
+            <td><font face="Trebuchet MS" size="2">sm</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sangro</font></td>
+            <td><font face="Trebuchet MS" size="2">sg</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sanskrit</font></td>
+            <td><font face="Trebuchet MS" size="2">sa</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Serbian</font></td>
+            <td><font face="Trebuchet MS" size="2">sr</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Serbo-Croatian</font></td>
+            <td><font face="Trebuchet MS" size="2">sh</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sesotho</font></td>
+            <td><font face="Trebuchet MS" size="2">st</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Setswana</font></td>
+            <td><font face="Trebuchet MS" size="2">tn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Shona</font></td>
+            <td><font face="Trebuchet MS" size="2">sn</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sichuan Yi</font></td>
+            <td><font face="Trebuchet MS" size="2">ii</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sindhi</font></td>
+            <td><font face="Trebuchet MS" size="2">sd</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sinhalese</font></td>
+            <td><font face="Trebuchet MS" size="2">si</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Siswati</font></td>
+            <td><font face="Trebuchet MS" size="2">ss</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Slovak</font></td>
+            <td><font face="Trebuchet MS" size="2">sk</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Slovenian</font></td>
+            <td><font face="Trebuchet MS" size="2">sl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Somali</font></td>
+            <td><font face="Trebuchet MS" size="2">so</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Spanish</font></td>
+            <td><font face="Trebuchet MS" size="2">es</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Sundanese</font></td>
+            <td><font face="Trebuchet MS" size="2">su</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Swahili (Kiswahili)</font></td>
+            <td><font face="Trebuchet MS" size="2">sw</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Swedish</font></td>
+            <td><font face="Trebuchet MS" size="2">sv</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Syriac</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tagalog</font></td>
+            <td><font face="Trebuchet MS" size="2">tl</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tajik</font></td>
+            <td><font face="Trebuchet MS" size="2">tg</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tamazight</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tamil</font></td>
+            <td><font face="Trebuchet MS" size="2">ta</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tatar</font></td>
+            <td><font face="Trebuchet MS" size="2">tt</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Telugu</font></td>
+            <td><font face="Trebuchet MS" size="2">te</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Thai</font></td>
+            <td><font face="Trebuchet MS" size="2">th</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tibetan</font></td>
+            <td><font face="Trebuchet MS" size="2">bo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tigrinya</font></td>
+            <td><font face="Trebuchet MS" size="2">ti</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tonga</font></td>
+            <td><font face="Trebuchet MS" size="2">to</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Tsonga</font></td>
+            <td><font face="Trebuchet MS" size="2">ts</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Turkish</font></td>
+            <td><font face="Trebuchet MS" size="2">tr</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Turkmen</font></td>
+            <td><font face="Trebuchet MS" size="2">tk</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Twi</font></td>
+            <td><font face="Trebuchet MS" size="2">tw</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Uighur</font></td>
+            <td><font face="Trebuchet MS" size="2">ug</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Ukrainian</font></td>
+            <td><font face="Trebuchet MS" size="2">uk</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Urdu</font></td>
+            <td><font face="Trebuchet MS" size="2">ur</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Uzbek</font></td>
+            <td><font face="Trebuchet MS" size="2">uz</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Venda</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Vietnamese</font></td>
+            <td><font face="Trebuchet MS" size="2">vi</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Volapük</font></td>
+            <td><font face="Trebuchet MS" size="2">vo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Wallon</font></td>
+            <td><font face="Trebuchet MS" size="2">wa</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Welsh</font></td>
+            <td><font face="Trebuchet MS" size="2">cy</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Wolof</font></td>
+            <td><font face="Trebuchet MS" size="2">wo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Xhosa</font></td>
+            <td><font face="Trebuchet MS" size="2">xh</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Yi</font></td>
+            <td><font face="Trebuchet MS" size="2"></font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Yiddish</font></td>
+            <td><font face="Trebuchet MS" size="2">yi, ji</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Yoruba</font></td>
+            <td><font face="Trebuchet MS" size="2">yo</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Trebuchet MS" size="2">Zulu</font></td>
+            <td><font face="Trebuchet MS" size="2">zu</font></td>
+          </tr>
+        </table>
+        <div id="err_form" style="display:none"> 
+          <p>&nbsp;</p>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><a href="javascript:history.go(-1)">Previous Page&nbsp;</a></p>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

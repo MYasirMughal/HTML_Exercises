@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Educator.com - Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<form method="post" action="" enctype="multipart/form-data">
+  <table width="68%" border="1" cellspacing="0" cellpadding="5" align="center">
+    <tr valign="top" bgcolor="#CCCCFF"> 
+      <td colspan="3"><font size="3" face="Trebuchet MS"><b><font size="4">Text 
+        Field Attributes</font></b></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS">Text Field</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="text" name="textfield">
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS">Purpose: Collect Single 
+        Line Data. For ex. (Name, Address, Email, etc)<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text"&gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> name</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="text" name="name" >
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Names a specific &lt;input&gt; 
+        element<br>
+        Values: <i>text</i><br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>name</b></font>="<font color="green">name</font>" 
+        &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> Autofocus </font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="text" autofocus="on" name="text" >
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies that an &lt;input&gt; 
+        element should automatically get focus when the page loads. Cursor begins 
+        here. <br>
+        Values: 'autofocus'<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>autofocus</b></font>="<font color="green">autofocus</font>" 
+        &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> Autocomplete</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="text" autocomplete="on" name="text2" >
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies that an &lt;input&gt; 
+        element should have autocomplete enabled<br>
+        Values: 'on', 'off'<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>autocomplete</b></font>="<font color="green">on</font>" 
+        &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> Disabled</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> First name: 
+        <input type="text" name="fname" />
+        <br />
+        Last name: 
+        <input type="text" name="lname" disabled="disabled" />
+        <br />
+        <input type="submit" value="Submit" name="submit2" />
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies that an &lt;input&gt; 
+        element should be disabled.<br>
+        Values: <font color="green">'disabled</font>'<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>disabled</b></font>="<font color="green">on</font>" 
+        &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> maxlength</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="text" maxlength="10" name="text3" >
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies that the maximum 
+        amount of allowable characters.<br>
+        Values: <i>num</i><br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>maxlength</b></font>="<font color="green">10</font>" 
+        &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> min</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> Enter a date before 
+        1980-01-01: 
+        <input type="date" name="bday" max="1979-12-31">
+        <br />
+        Enter a date after 2000-01-01: 
+        <input type="date" name="bday" min="2000-01-02">
+        <br />
+        Quantity (between 1 and 5): 
+        <input type="number" name="quantity" min="1" max="5" />
+        <br />
+        <input type="submit" name="submit5" />
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies a minimum 
+        value for an &lt;input&gt; element.<br>
+        Needs backend programming.<br>
+        Values: <i>num</i><br>
+        <br>
+        Enter a date before 1980-01-01:<br>
+        &lt;input type="date" name="bday" max="1979-12-31" &gt; &lt;BR&gt;<br>
+        <br>
+        Enter a date after 2000-01-01:<br>
+        &lt;input type="date" name="bday" min="2000-01-02" &gt; &lt;BR&gt;<br>
+        <br>
+        Quantity (between 1 and 5):<br>
+        &lt;input type="number" name="quantity" min="1" max="5" / &gt; <br>
+        <br>
+        &lt;input type="submit" /&gt; </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> multiple</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> Select images: 
+        <input type="file" name="img" multiple="multiple" />
+        <input type="submit" name="submit6" />
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies that a user 
+        can enter more than one value in an &lt;input&gt; element. Needs backend 
+        programming.<br>
+        <br>
+        Select images: &lt;input type="file" name="img" multiple="multiple" /&gt;<br>
+        &lt;input type="submit"&gt; </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> placeholder</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> <font size="2">First 
+        name: 
+        <input type="text" placeholder="First name" name="text4" size="20" >
+        <br>
+        Last name: 
+        <input type="text" name="text5" size="20" >
+        </font></font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies a short hint 
+        that describes the expected value of an &lt;input&gt; element.<br>
+        Values: <i>text</i> <br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>placeholder</b></font>="First 
+        name" &gt;<br>
+        Last name&lt;input <font color="red"><b>type</b></font>="text" &gt; </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> read only</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> Country: 
+        <input type="text" name="country" value="Norway" readonly="readonly" />
+        <br />
+        <input type="submit" value="Submit" name="submit7" />
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Names a specific &lt;input&gt; 
+        element<br>
+        Values: <i>text</i><br>
+        <br>
+        &lt;input type="text" name="country" value="Norway" readonly="readonly"&gt;<br>
+        &lt;input type="submit" value="Submit" &gt;</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%" height="41"><font size="3" face="Trebuchet MS"> required</font></td>
+      <td width="28%" height="41"> <font size="3" face="Trebuchet MS"> Username: 
+        <input type="text" name="usrname" required="required" />
+        <input type="submit" name="submit3" />
+        </font></td>
+      <td width="58%" height="41"><font size="3" face="Trebuchet MS"> Specifies 
+        that an input field must be filled out before submitting the form<br>
+        Values: required<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>="text" <font color="blue"><b>name</b></font>="<font color="green">usrname</font>" 
+        <font color="blue"><b>required</b></font>="<font color="green">required</font>" 
+        / &gt;<br>
+        &lt;input <font color="red"><b>type</b></font>="<font color="green">submit</font>" 
+        &gt; </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS"> accept</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <input type="file" name="pic" accept="image/*" />
+        <input type="submit" name="submit4" />
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS"> Specifies the types 
+        of files that the server accepts (only for type="file")<br>
+        Values: audio/* video/* image/* MIME_type<br>
+        <br>
+        &lt;input <font color="red"><b>type</b></font>e="file" <font color="blue"><b>name</b></font>="<font color="green">pic</font>" 
+        <b><font color="blue">accept</font></b>="<font color="green">image/*</font>" 
+        / &gt;<br>
+        &lt;input <font color="red"><b>type</b></font>="submit" / &gt;</font></td>
+    </tr>
+    <tr valign="top" bgcolor="#CCCCFF"> 
+      <td colspan="3"><font size="3" face="Trebuchet MS"><b><font size="4">Text 
+        Area Attributes</font></b></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS">Text Area</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <textarea name="textarea"></textarea>
+        </font></td>
+      <td width="58%"><font face="Trebuchet MS">Purpose: Collect Multiple Levels 
+        of information<br>
+        <br>
+        &lt;textarea </font><font size="3" face="Trebuchet MS"><font color="blue"><b>name</b></font></font><font face="Trebuchet MS">="<font color="green">textarea</font>">&lt;/font></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS">Rows / Cols</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <textarea rows="4" cols="30" name="textarea2">Row1
+Row2
+Row3
+Row4
+</textarea>
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS">Specifies the visible 
+        width of a text area<br>
+        Values: <i>num</i> <br>
+        &lt;textarea <b><font color="blue">rows</font></b>="<font color="green">4</font>" 
+        <font color="blue"><b>cols</b></font>="<font color="green">30</font>"></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font size="3" face="Trebuchet MS">Wrap</font></td>
+      <td width="28%"> <font size="3" face="Trebuchet MS"> 
+        <textarea rows="2" cols="20" name="usrtxt" wrap="hard">
+At W3Schools you will find free Web-building tutorials.
+</textarea>
+        <input type="submit" name="submit" >
+        </font></td>
+      <td width="58%"><font size="3" face="Trebuchet MS">Specifies how the text 
+        in a text area is to be wrapped when submitted in a form<br>
+        Values: hard, soft <br>
+        <br>
+        &lt;textarea rows="2" cols="20" name="usrtxt" <font color="blue"><b>wrap</b></font>="hard"&gt;<br>
+        At W3Schools you will find free Web-building tutorials. <br>
+        &lt;/textarea> <br>
+        &lt;input type="submit" > </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="14%"><font face="Trebuchet MS" size="3">autofocus<br>
+        disabled<br>
+        maxlength</font></td>
+      <td width="28%"><font face="Trebuchet MS" size="3">See above at Text Field 
+        section</font></td>
+      <td width="58%">&nbsp;</td>
+    </tr>
+  </table>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="javascript:history.go(-1)">Previous Page&nbsp;</a></p>
+</body>
+</html>

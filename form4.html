@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Educator.com - Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<form method="post" action="" enctype="multipart/form-data">
+  <table width="68%" border="1" cellspacing="0" cellpadding="5" align="center">
+    <tr valign="top" bgcolor="#CCCCFF"> 
+      <td colspan="3"><font size="3" face="Trebuchet MS"><b><font size="4">Text 
+        Field Attributes</font></b></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="3"> 
+        <ol>
+          <li><font face="Trebuchet MS"><b>Action - </b>Specifies where to send 
+            the form-data when a form is submitted</font></li>
+          <li><font face="Trebuchet MS"><b>Enctype -</b> Specifies how the form-data 
+            should be encoded when submitting it to the server (only for method="post")</font></li>
+          <li><font face="Trebuchet MS"><b>Method (Get / Post) </b>- Specifies 
+            the HTTP method to use when sending form-data</font> </li>
+          <ul>
+            <li><font face="Trebuchet MS">Notes on the "get" method:<br>
+              <font size="2">(1)This method appends the form-data to the URL in 
+              name/value pairs <br>
+              (2)This method is useful for form submissions where a user want 
+              to bookmark the result <br>
+              (3)There is a limit to how much data you can place in a URL (varies 
+              between browsers), therefore, you cannot be sure that all of the 
+              form-data will be correctly transferred <br>
+              (4)Never use the "get" method to pass sensitive information! (password 
+              or other sensitive information will be visible in the browser's 
+              address bar) </font><br>
+              <br>
+              </font></li>
+            <li><font face="Trebuchet MS"> Notes on the "post" method:<br>
+              <font size="2">(1)This method sends the form-data as an HTTP post 
+              transaction<br>
+              (2)Form submissions with the "post" method cannot be bookmarked<br>
+              (3)The "post" method is more robust and secure than "get", and "post" 
+              does not have size limitations</font><br>
+              <br>
+              </font></li>
+          </ul>
+          <li><font face="Trebuchet MS"><b>Name</b>- Identifies the form</font></li>
+          <li><font face="Trebuchet MS"><b>Novalidate </b>- Specifies that the 
+            form should not be validated when submitted</font></li>
+          <li><font face="Trebuchet MS"><b>Target </b>(_blank, _self, _parent, 
+            _top) - Specifies where to display the response that is received after 
+            submitting the form</font> 
+            <ul>
+              <li><font face="Trebuchet MS" size="2">_blank - The response is 
+                displayed in a new window or tab</font></li>
+              <li><font face="Trebuchet MS" size="2">_self - The response is displayed 
+                in the same frame (this is default)</font></li>
+              <li><font face="Trebuchet MS" size="2">_parent - The response is 
+                displayed in the parent frame</font></li>
+              <li><font face="Trebuchet MS" size="2">_top - The response is displayed 
+                in the full body of the window</font><br>
+                <br>
+                <br>
+                <br>
+                <font face="Trebuchet MS">&lt;form <font color="blue"><b>name</b></font>="myForm" 
+                <font color="blue"><b>&nbsp;&nbsp;action</b></font>="demo_form.asp" 
+                &nbsp;&nbsp;<b><font color="blue">enctype</font></b>="multipart/form-data" 
+                &nbsp;&nbsp;<b><font color="blue">method</font></b>="post" <font color="blue"><b>&nbsp;&nbsp;novalidate</b></font>="novalidate" 
+                &nbsp;<font color="blue"><b>target</b></font>="_blank&quot; ><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="fname" /><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lname" /><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit" 
+                /></font><br>
+                <br>
+                <br>
+                First name: 
+                <input type="text" name="fname" />
+                <br />
+                Last name: 
+                <input type="text" name="lname" />
+                <br />
+                <input type="submit" value="Submit" name="submit" />
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="javascript:history.go(-1)">Previous Page&nbsp;</a></p>
+</body>
+</html>
